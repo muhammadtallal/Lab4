@@ -1,0 +1,39 @@
+<html>
+
+<script language='JavaScript' type='text/JavaScript'>
+	<!--
+	var myVar = setInterval(myFunction, 33);
+	function myFunction() {
+	var y=document.getElementById("plane").offsetTop;
+	var p1x=document.getElementById("planeo1").offsetLeft;
+	var p2x=document.getElementById("planeo2").offsetLeft;
+	if(y==200 && p1x>149 && p1x<400){
+		window.alert("Game over");
+	}
+	else if(y==400 && p2x>149 && p2x<400){
+		window.alert("Game Over");
+	}
+	}
+	
+	//-->
+	</script>
+	<link rel="stylesheet" type="text/css" href="lab4.css" />
+	<body>
+	
+	<div id="bg-transition">
+		<div id="planeo1"></div>
+ 		<div id="planeo2"></div>
+		<div id="plane"></div>
+
+		<a href="#plane">
+			<img src="upbutton.png" height="42" width="42">
+		</a>
+
+		<a href="#planedown">
+			<img src="downbutton.png" height="42" width="42">
+		</a>
+		<button type="button" onclick="myFunction()">Click Me!</button>
+
+	</div>
+	</body>
+</html>

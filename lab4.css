@@ -1,0 +1,95 @@
+#bg-transition{ 
+	position: absolute;
+	width: 100%; 
+	height: 100%; 
+	background-image: url(bg.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 5s linear infinite;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+#plane {
+	position:absolute;
+	width:100px;
+	height:100px;
+	top:400px;
+	left:300px;
+	background-image: url(plane.png);
+	background-size:100px 100px;
+}
+#plane:target {
+	top:200px;
+	left:300px;
+}
+#planedown:target {
+	top:400px;
+	left:300px;
+}
+#planeo1 {
+ 	width:150px;
+  	height:70px;
+  	background-image: url(rocket.png);
+  	position:absolute;
+  	top:200px;
+  	left:90%;
+  	margin-left:-100px;
+  	-webkit-animation:movingbox1 10s infinite;
+	background-size:150px 70px;
+}
+@-webkit-keyframes movingbox1{
+  0%{left:90%;}
+  50%{left:0%;}
+  100%{left:90%;}
+}
+#planeo2 {
+ 	width:150px;
+  	height:70px;
+  	background-image: url(rocket.png);
+  	position:absolute;
+  	top:400px;
+  	left:10%;
+  	margin-left:-10px;
+  	-webkit-animation:movingbox2 10s infinite;
+	background-size:150px 70px;
+}
+@-webkit-keyframes movingbox2{
+  0%{left:90%;}
+  50%{left:10%;}
+  100%{left:90%;}
+}
+#fire {
+ 	width:150px;
+  	height:70px;
+  	background-image: url(fire.png);
+  	position:absolute;
+  	top:400px;
+  	left:10%x;
+  	margin-top:-10px;
+  	-webkit-animation:movingfire 15s infinite;
+	background-size:150px 70px;
+	animation-timing-function: linear;
+}
+@-webkit-keyframes movingfire {
+      0%{left:100%;}
+      100%{left:0%;}
+}
+#fire1 {
+ 	width:150px;
+  	height:70px;
+  	background-image: url(fire.png);
+  	position:absolute;
+  	top:400px;
+  	left:10%x;
+  	margin-top:-10px;
+  	-webkit-animation:movingfire1 15s infinite;
+	background-size:150px 70px;
+	animation-timing-function: linear;
+}
+@-webkit-keyframes movingfire1 {
+      0%{left:100%;}
+      100%{left:0%;}
+}

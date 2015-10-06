@@ -1,0 +1,9 @@
+Name: Muhammad Tallal
+Class: BESE-4B
+Reg. No.: 04939
+
+GitHub Link:
+https://github.com/muhammadtallal/Lab4
+
+Desciption:
+In this game, collision detection function does run contimuously. It runs when button is pressed. No internet connection is required.
