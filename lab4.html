@@ -3,16 +3,32 @@
 <script language='JavaScript' type='text/JavaScript'>
 	<!--
 	var myVar = setInterval(myFunction, 33);
+	var score =0;
 	function myFunction() {
+	
 	var y=document.getElementById("plane").offsetTop;
 	var p1x=document.getElementById("planeo1").offsetLeft;
 	var p2x=document.getElementById("planeo2").offsetLeft;
 	if(y==200 && p1x>149 && p1x<400){
-		window.alert("Game over");
+	
+		document.getElementById("plane").style.visibility = "hidden";
+		document.getElementById("planeo1").style.visibility = "hidden";
+		document.getElementById("planeo2").style.visibility = "hidden";
+		
+		document.write("<body background='bg.png'><p style='color:white;text-align:center;font-size:100px;margin-top:300px;'>Game Over</p><a href='lab4.html' style='text-decoration:none;color:white;text-align:center;font-size:50px;margin-left:600px'>Play Again</a></body>");
+	window.alert("Your score is "+score);
 	}
 	else if(y==400 && p2x>149 && p2x<400){
-		window.alert("Game Over");
+		document.getElementById("plane").style.visibility = "hidden";
+		document.getElementById("planeo1").style.visibility = "hidden";
+		document.getElementById("planeo2").style.visibility = "hidden";
+		
+		document.write("<body background='bg.png'><p style='color:white;text-align:center;font-size:100px;margin-top:300px;'>Game Over</p><a href='lab4.html' style='text-decoration:none;color:white;text-align:center;font-size:50px;margin-left:600px'>Play Again</a></body>");
+	window.alert("Your score is "+score);
 	}
+	}
+	function scoreFunction(){
+		score=score+100;
 	}
 	
 	//-->
@@ -25,14 +41,13 @@
  		<div id="planeo2"></div>
 		<div id="plane"></div>
 
-		<a href="#plane">
+		<a href="#plane" onclick="scoreFunction();">
 			<img src="upbutton.png" height="42" width="42">
 		</a>
 
-		<a href="#planedown">
+		<a href="#planedown" onclick="scoreFunction();">
 			<img src="downbutton.png" height="42" width="42">
 		</a>
-		<button type="button" onclick="myFunction()">Click Me!</button>
 
 	</div>
 	</body>

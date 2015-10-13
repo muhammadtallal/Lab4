@@ -6,4 +6,4 @@ GitHub Link:
 https://github.com/muhammadtallal/Lab4
 
 Desciption:
-In this game, collision detection function does run contimuously. It runs when button is pressed. No internet connection is required.
+In this game, you can move plane using up and down buttons. Whenever you touch the rocket, your game overs and your score is displayed.

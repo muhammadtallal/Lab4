@@ -39,6 +39,7 @@
   	margin-left:-100px;
   	-webkit-animation:movingbox1 10s infinite;
 	background-size:150px 70px;
+	animation-delay:5s;
 }
 @-webkit-keyframes movingbox1{
   0%{left:90%;}
@@ -60,36 +61,4 @@
   0%{left:90%;}
   50%{left:10%;}
   100%{left:90%;}
-}
-#fire {
- 	width:150px;
-  	height:70px;
-  	background-image: url(fire.png);
-  	position:absolute;
-  	top:400px;
-  	left:10%x;
-  	margin-top:-10px;
-  	-webkit-animation:movingfire 15s infinite;
-	background-size:150px 70px;
-	animation-timing-function: linear;
-}
-@-webkit-keyframes movingfire {
-      0%{left:100%;}
-      100%{left:0%;}
-}
-#fire1 {
- 	width:150px;
-  	height:70px;
-  	background-image: url(fire.png);
-  	position:absolute;
-  	top:400px;
-  	left:10%x;
-  	margin-top:-10px;
-  	-webkit-animation:movingfire1 15s infinite;
-	background-size:150px 70px;
-	animation-timing-function: linear;
-}
-@-webkit-keyframes movingfire1 {
-      0%{left:100%;}
-      100%{left:0%;}
 }
